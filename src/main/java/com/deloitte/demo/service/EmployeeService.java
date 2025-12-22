@@ -17,6 +17,7 @@ public class EmployeeService {
 		// DELETE == remove()
 
 		EntityManager em = JPAUtil.getEntityManager();
+
 		em.getTransaction().begin();
 		em.persist(new Employee(name, salary));
 		em.getTransaction().commit();
