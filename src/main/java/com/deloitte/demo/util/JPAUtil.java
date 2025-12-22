@@ -7,6 +7,8 @@ import jakarta.persistence.Persistence;
 public class JPAUtil {
 
 	private static final EntityManagerFactory emf = Persistence.createEntityManagerFactory("deloitte-jpa-demo");
+	// change the string value above and see
+	// see persistence.xml
 
 	public static EntityManager getEntityManager() {
 		return emf.createEntityManager();
