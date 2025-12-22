@@ -1,9 +1,11 @@
 package com.deloitte.demo;
 
+import java.time.DayOfWeek;
 import java.util.List;
 import java.util.Scanner;
 
 import com.deloitte.demo.model.Employee;
+import com.deloitte.demo.model.Gender;
 import com.deloitte.demo.service.EmployeeService;
 import com.deloitte.demo.util.JPAUtil;
 
@@ -17,6 +19,14 @@ import com.deloitte.demo.util.JPAUtil;
 public class App {
 
 	public static void main(String[] args) {
+
+//		Gender myGender = Gender.FEMALE;
+//		System.out.println(myGender); // FEMALE
+//
+//		DayOfWeek today = DayOfWeek.MONDAY;
+//		System.out.println(today);
+//		today = DayOfWeek.TUESDAY;
+//		System.out.println(today);
 
 		EmployeeService service = new EmployeeService();
 		Scanner sc = new Scanner(System.in);

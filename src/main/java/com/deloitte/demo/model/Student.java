@@ -23,7 +23,8 @@ public class Student {
 
 	@Enumerated(EnumType.STRING)
 	@Column(nullable = false)
-	private Gender gender;
+	private Gender gender; // fixed values
+	// colors CMYK
 
 	// Owning side
 	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
@@ -95,3 +96,24 @@ public class Student {
 		return getClass().hashCode();
 	}
 }
+
+// normal case student_course table will be created automatically in the db 
+// 
+// separate java class not needed 
+// 
+// but based in the requirement, another separate entity like "Enrollment" could be needed 
+// 
+// in that case, a seperate java class is needed 
+/**
+ * enrollment
+ * 
+ * eid
+ *
+ * sid
+ * 
+ * cid
+ * 
+ * date
+ * 
+ * marks
+ */
